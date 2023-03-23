@@ -18,4 +18,4 @@ rm ~/.ssh/cloudshell_ssh_config
 
 echo "Done.. Choose 'cloudshell' remote host in VS Code.."
 
-$(echo $op 'bash -s' < run_on_cloudshell.sh)
+$(echo $op -- 'bash -s' < run_on_cloudshell.sh)
