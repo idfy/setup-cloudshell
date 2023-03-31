@@ -17,7 +17,3 @@ cat ~/.ssh/cloudshell_ssh_config >> ~/.ssh/config
 rm ~/.ssh/cloudshell_ssh_config
 
 echo "Done.. Choose 'cloudshell' remote host in VS Code.."
-
-$(echo $op -- 'bash -s' < run_on_cloudshell.sh)
-
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/idfy/setup-cloudshell/main/cloudshell/run_on_boot.sh)"

@@ -52,8 +52,8 @@ start_vm () {
 }
 
 split_on_dot () {
-  IFS='.' read -ra ADDR <<< "$1"
-  echo ADDR
+  IFS='.' read -ra input <<< "$1"
+  echo input
 }
 
 banner_on_new_session () {
