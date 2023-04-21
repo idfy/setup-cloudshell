@@ -55,8 +55,3 @@ split_on_dot () {
   IFS='.' read -ra input <<< "$1"
   echo input
 }
-
-banner_on_new_session () {
-  echo "Web host base URL is ${WEB_HOST}"
-  echo "Prepend the port on which your server is running. eg - https://8080-${WEB_HOST}"
-}
